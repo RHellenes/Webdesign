@@ -2,6 +2,8 @@
 
 Disse eksemplene fokuserer på `@media` breakpoint metoden for å oppnå responsivt design — da [fluid design](https://medium.com/@mchisti/two-css-tricks-thatll-make-your-site-fully-responsive-5f9efba4015e) er pensum i webutvikling.
 
+&nbsp;
+
 ## Viewport
 
 For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukser til nettleseren om hvilken størrelse nettsiden skal vises i. Dette gjør du ved å legge inn koden under: 
@@ -17,6 +19,7 @@ For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukse
 
 **`initial-scale`** - gir beskjed om initiell zoom, `1.0` er original størrelse, `2.0` er zoomet dobbelt så langt inn.
 
+&nbsp;
 
 ## Media Queries | `@media`-breakpoint
 
