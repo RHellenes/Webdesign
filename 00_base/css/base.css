@@ -4,12 +4,22 @@
 
 :root {
   --rh-black: #2c2c2c;
-  --rh-white: rbg(253, 253, 253);
-  --rh-turquoise: rbg(14, 203, 174);
+  --rh-white: #fdfdfd;
+  --rh-turquoise: #0ecbae;
+  --space--s: 0.5rem;
+  --space: 1rem;
+  --space--m: 1.5rem;
+  --space--l: 2rem;
+  --space--xl: 2rem;
+}
+html {
+  font-size: 16px;
 }
 * {
   color: var(--rh-black);
+  box-sizing: border-box;
 }
 body {
   background-color: var(--rh-white);
+  font-family: "hk_grotesksemibold", sans-serif;
 }

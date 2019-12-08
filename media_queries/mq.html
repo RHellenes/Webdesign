@@ -3,17 +3,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../base/css/base.css" />
+    <link rel="stylesheet" href="../00_base/css/base.css" />
+    <link rel="stylesheet" href="../00_base/css/nav.css" />
     <link rel="stylesheet" href="mq.css" />
     <title>Mobile first MQ</title>
   </head>
   <body>
-    <header>
+    <header class="header header--nav_is_open">
       <div class="logo">
-        <img src="" alt="" />
+        <img
+          src="../01_assets/device_illustration_Cool_inc-logo.svg"
+          alt="Cool Inc. Logo"
+        />
       </div>
+      <button class="nav_button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_list_container">
+            <a href="#" class="nav_list_container_link">About</a>
+          </li>
+          <li class="nav_list_container">
+            <a href="#" class="nav_list_container_link">Work</a>
+          </li>
+          <li class="nav_list_container">
+            <a href="#" class="nav_list_container_link">Contact</a>
+          </li>
+          <li class="nav_list_container">
+            <a href="#" class="nav_list_container_link">Articles</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>Vil dette være Hk Grotesk?</main>
-    <footer></footer>
+    <footer>
+      <div class="logo">
+        <img
+          src="../01_assets/device_illustration_Cool_inc-logo-inverted.svg"
+          alt="Cool Inc. Logo"
+        />
+      </div>
+    </footer>
+    <script src="../00_base/js/nav.js"></script>
   </body>
 </html>
