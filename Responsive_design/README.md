@@ -47,7 +47,7 @@ For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukse
 ![Mobile first illustration](assets/device_illustration_min-width.svg)
 
 ```css
-  /*Mindre enn 576px*/
+/*Mindre enn 576px*/
 @media only screen and (min-width: 576px) {
   /*Større enn 576px*/
   body{
