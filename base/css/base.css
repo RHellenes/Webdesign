@@ -1,0 +1,7 @@
+@import "../fonts/fonts.css";
+
+:root {
+  --rh-black: #2c2c2c;
+  --rh-white: rbg(253, 253, 253);
+  --rh-turquoise: rbg(14, 203, 174);
+}
