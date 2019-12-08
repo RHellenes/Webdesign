@@ -67,7 +67,7 @@ For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukse
 
 &nbsp;
 
-**Min-width (Mobile first)** 
+**Max-width** 
 
 ![Mobile first illustration](assets/device_illustration_max-width.svg)
 
