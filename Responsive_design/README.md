@@ -42,7 +42,7 @@ For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukse
 
 &nbsp;
 
-**Min-width (Mobile first)** 
+### Min-width (Mobile first)
 
 ![Mobile first illustration](assets/device_illustration_min-width.svg)
 
@@ -70,7 +70,7 @@ For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukse
 
 &nbsp;
 
-**Max-width** 
+### Max-width (Desktop first)
 
 ![Mobile first illustration](assets/device_illustration_max-width.svg)
 
