@@ -2,7 +2,7 @@
 
 Disse eksemplene fokuserer på `@media` breakpoint metoden for å oppnå responsivt design — da [fluid design](https://medium.com/@mchisti/two-css-tricks-thatll-make-your-site-fully-responsive-5f9efba4015e) er pensum i webutvikling.
 
-### Viewport
+## Viewport
 
 For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukser til nettleseren om hvilken størrelse nettsiden skal vises i. Dette gjør du ved å legge inn koden under: 
 
@@ -18,7 +18,7 @@ For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukse
 **`initial-scale`** - gir beskjed om initiell zoom, `1.0` er original størrelse, `2.0` er zoomet dobbelt så langt inn.
 
 
-### Media Queries | `@media`-breakpoint
+## Media Queries | `@media`-breakpoint
 
  **Hva er det?**
 
@@ -33,7 +33,7 @@ For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukse
 
 &nbsp;
 
-### De vanligste tilnærmingene
+## De vanligste tilnærmingene
 
 `@media only screen and (Min/max-width= #px){...}`
 
@@ -96,7 +96,7 @@ For å aktivere muligheten til å bruke denne metoden er det viktig gi instrukse
 
 &nbsp;
 
-### Read more:
+## Read more:
 - Book: Learning Responsive Web Design — a beginner's guide — By Clarissa Peterson
 - [MDN web docs - Official documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 - [W3School about Responsive webdesign](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
