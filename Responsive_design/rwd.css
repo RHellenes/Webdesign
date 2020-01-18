@@ -2,7 +2,17 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   align-content: flex-start;
+  padding: 0 var(--space);
+  width: 100%;
 }
 
 .logo {
@@ -31,4 +41,111 @@ footer {
   .logo {
     width: 12.5%;
   }
+}
+section {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.card {
+  width: calc(100%);
+  margin: 0 0 1rem 0;
+}
+.card-section:nth-child(n + 5) {
+  display: none;
+}
+@media only screen and (min-width: 500px) {
+  section {
+    justify-content: space-between;
+  }
+  .card {
+    width: calc(50% - 0.5rem);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card-section:nth-child(n + 6) {
+    display: none;
+  }
+  .card {
+    width: calc(33% - 0.5rem);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: calc(25% - 0.5rem);
+  }
+}
+.image-container {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  padding-bottom: 100%;
+  background: var(--rh-black);
+  position: relative;
+}
+.image-container {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  padding-bottom: 100%;
+  background: var(--rh-black);
+  position: relative;
+  z-index: 30;
+}
+.image-container span {
+  z-index: 40;
+  color: var(--rh-white);
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  margin: -1.5rem 0 0 -1.5rem;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+.action-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: var(--rh-turquoise);
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+.action {
+  position: relative;
+}
+.hearts {
+  padding-left: 1rem;
+}
+.hearts:before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 3px;
+  background: center center no-repeat url("assets/heart-regular.svg");
+  background-size: contain;
+  width: 1em;
+  height: 1em;
+}
+.hearts:hover:before {
+  background: center center no-repeat url("assets/heart-solid.svg");
+  background-size: contain;
+  width: 1em;
+  height: 1em;
+}
+
+.comment :before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 3px;
+  background: center center no-repeat url("assets/comment-alt-solid.svg");
+  background-size: contain;
+  width: 1em;
+  height: 1em;
 }

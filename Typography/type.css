@@ -1,0 +1,5 @@
+/* Hentet fra helbak.dk : vaersaagod*/
+body * {
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility;
+}

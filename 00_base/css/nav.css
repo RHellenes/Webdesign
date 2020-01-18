@@ -15,6 +15,7 @@ body {
   min-height: 4rem;
   transition: max-height 150ms ease-in-out;
   transition-delay: 0;
+  z-index: 1000;
 }
 
 .header--nav_is_open {
