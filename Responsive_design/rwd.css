@@ -11,7 +11,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding: 0 var(--space);
+  padding: 3rem var(--space) 0 var(--space);
   width: 100%;
 }
 
@@ -55,7 +55,7 @@ section {
   width: calc(100%);
   margin: 0 0 1rem 0;
 }
-.card-section:nth-child(n + 5) {
+.card:nth-of-type(n + 4) {
   display: none;
 }
 @media only screen and (min-width: 500px) {
@@ -65,6 +65,9 @@ section {
   .card {
     width: calc(50% - 0.5rem);
   }
+  .card:nth-of-type(-n + 4) {
+    display: block;
+  }
 }
 @media only screen and (min-width: 768px) {
   .card-section:nth-child(n + 6) {
@@ -73,10 +76,16 @@ section {
   .card {
     width: calc(33% - 0.5rem);
   }
+  .card:nth-of-type(-n + 6) {
+    display: block;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .card {
     width: calc(25% - 0.5rem);
+  }
+  .card:nth-of-type(n) {
+    display: block;
   }
 }
 .image-container {
@@ -84,21 +93,15 @@ section {
   width: 100%;
   height: 1px;
   padding-bottom: 100%;
-  background: var(--rh-black);
-  position: relative;
-}
-.image-container {
-  display: inline-block;
-  width: 100%;
-  height: 1px;
-  padding-bottom: 100%;
-  background: var(--rh-black);
+  border: solid 2px var(--rh-black);
+  border-bottom: none;
   position: relative;
   z-index: 30;
 }
+
 .image-container span {
   z-index: 40;
-  color: var(--rh-white);
+  color: var(--rh-black);
   font-size: 3rem;
   position: absolute;
   height: 3rem;
@@ -115,11 +118,17 @@ section {
   background: var(--rh-turquoise);
   font-size: 1rem;
   padding: 1rem 0;
+  border: solid 2px var(--rh-black);
+  /* border-top: none; */
 }
 .action {
   position: relative;
 }
-.hearts {
+.action > button {
+  cursor: pointer;
+}
+.hearts,
+.comment {
   padding-left: 1rem;
 }
 .hearts:before {
@@ -139,10 +148,10 @@ section {
   height: 1em;
 }
 
-.comment :before {
+.comment:before {
   content: "";
   position: absolute;
-  left: -2px;
+  left: -4px;
   top: 3px;
   background: center center no-repeat url("assets/comment-alt-solid.svg");
   background-size: contain;
