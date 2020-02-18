@@ -1,0 +1,51 @@
+body {
+  font-size: 1em;
+}
+.card__container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card__container__figure {
+  width: 100%;
+  margin: 0;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.card__container__figure__img {
+  display: block;
+  width: 100%;
+}
+.card__container__textarea {
+  width: 100%;
+}
+.card__container__textarea h1 {
+  margin-bottom: 0.5em;
+}
+.card__container__textarea p {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 500px) {
+  .card__container__figure__img {
+    /*  margin-top: -25%; */
+  }
+}
+@media screen and (min-width: 768px) {
+  .card__container {
+    flex-flow: row nowrap;
+  }
+  .card__container__figure {
+    width: 40%;
+    overflow: hidden;
+  }
+  .card__container__textarea {
+    width: 60%;
+    padding: 0 2rem;
+  }
+  .card__container__textarea h1 {
+    margin-top: 0;
+  }
+}

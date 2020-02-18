@@ -6,6 +6,9 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+/* * {
+  transition: all 0.5s ease-in-out;
+} */
 main {
   display: flex;
   justify-content: center;
@@ -31,17 +34,6 @@ footer {
   padding: var(--space);
 }
 
-@media only screen and (min-width: 768px) {
-  .logo {
-    width: 20%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .logo {
-    width: 12.5%;
-  }
-}
 section {
   display: flex;
   justify-content: flex-start;
@@ -58,36 +50,7 @@ section {
 .card:nth-of-type(n + 4) {
   display: none;
 }
-@media only screen and (min-width: 500px) {
-  section {
-    justify-content: space-between;
-  }
-  .card {
-    width: calc(50% - 0.5rem);
-  }
-  .card:nth-of-type(-n + 4) {
-    display: block;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .card-section:nth-child(n + 6) {
-    display: none;
-  }
-  .card {
-    width: calc(33% - 0.5rem);
-  }
-  .card:nth-of-type(-n + 6) {
-    display: block;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .card {
-    width: calc(25% - 0.5rem);
-  }
-  .card:nth-of-type(n) {
-    display: block;
-  }
-}
+
 .image-container {
   display: inline-block;
   width: 100%;
@@ -157,4 +120,40 @@ section {
   background-size: contain;
   width: 1em;
   height: 1em;
+}
+
+@media only screen and (min-width: 500px) {
+  section {
+    justify-content: space-between;
+  }
+  .card {
+    width: calc(50% - 0.5rem);
+  }
+  .card:nth-of-type(-n + 4) {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 20%;
+  }
+  .card {
+    width: calc(33% - 0.5rem);
+  }
+  .card:nth-of-type(-n + 6) {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo {
+    width: 12.5%;
+  }
+  .card {
+    width: calc(25% - 0.5rem);
+  }
+  .card:nth-of-type(n) {
+    display: block;
+  }
 }

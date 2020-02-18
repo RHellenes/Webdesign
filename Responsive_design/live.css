@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+figure,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.card__container {
+  width: 100%;
+}
+
+.card__container__figure {
+  width: 100%;
+}
+
+.card__container__figure__picture {
+  width: 100%;
+  display: block;
+}
+.card__container__figure__picture__img {
+  width: 100%;
+  display: block;
+}
+
+.card__container__textarea {
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1.3em;
+  line-height: 1.4;
+}
+
+.card__container__textarea__title {
+}
+.card__container__textarea__p {
+}
+
+@media (min-width: 1100px) {
+  .card__container__figure,
+  .card__container__textarea {
+    width: 50%;
+    float: left;
+  }
+}
